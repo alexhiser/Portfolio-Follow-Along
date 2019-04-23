@@ -15,9 +15,27 @@ header {
   text-align:center;
 }
 
-.navButton {
+nav {
+  position:relative;
   flex:1;
+}
+
+.navButton {
   text-align:right;
+}
+
+nav ul.menu {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:none;
+  position:absolute;
+  right:0px;
+  text-align:right;
+}
+
+nav:hover ul {
+  display:block;
 }
 /* End of Header Styles */
 
@@ -33,5 +51,9 @@ main {
 footer {
   text-align: center;
   /* background-image: url('../images/DSC_0025.jpg'); */
+}
+
+.socialMedia i {
+  padding: 0 .5rem;
 }
 /* End of Footer Styles */
