@@ -1,0 +1,25 @@
+.aboutImage {
+  width: 200px;
+  height: 200px;
+  /* margin-left; auto;
+  margin-right; auto;
+  margin-top: 10px;
+  */
+  margin: 10px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.aboutImage img {
+  width; 100%
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align:center;
+  font-size: 1rem;
+}
