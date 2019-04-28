@@ -78,6 +78,7 @@ footer {
 }
 /* End of Footer Styles */
 
+/* I had already finished the media query before turning this in, as I was having technical difficulties with a few of the previous videos */
 @media screen and (min-width: 800px) {
   section {
     display:flex;
