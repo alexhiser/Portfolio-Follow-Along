@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 
-<head>
-  <head width="1920" height="1020">
-  <title>About Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" type="text/css" href="styles/about.css">
-</head>
+<html>
+  <head>
+    <title>Portfolio About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="https://ajax.googlepis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
 
 <body>
-<header>
-  <div id="nav">
-    <a>About Me</a>
-    <a>Experience</a>
-    <a>Portfolio</a>
-    <a>Contact Me</a>
-  </div>
-</header>
-
-<main>
-  <section>
-    <div class="aboutImage">
-      <img src="images/alex-2.jpg" alt="self image">
+  <header>
+    <div class="logo">
+      <div class="logoImage">
+        <img src="images/Alex_logo.jpg" alt="logo image" />
+      </div>
     </div>
-    <h1> Alex Hiser </h1> <!-- Maybe stamp this? -->
-    <h2> Designer . Photographer . UX </h2>
-  </section>
-</main>
-</body>
+  <nav onclick='$(".menu").toggle();'>
+  <div class="navButton">
+    &#9776;
+  </div>
+  <ul class="menu"> <!-- Check with Mark about Hover and About Page Image? -->
+    <a href="indexs.html">
+    <li>home<a></li></a>
+    <li>gallery<a></a></li>
+    <li>resume<a></a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="profileImage">
+        <img src="images/DSC_0035.jpg" alt="Profile Image for Alex Hiser"/>
+      </div>
+      <div class="aboutMe">
+        <p>My name is Alex Hiser and I am a Sophomore attending Ohio University. I am studying Publication Design and Integrated Media with a minor in Spanish and specialization in Media. I have experience in almost all Adobe Programs, Atom, Github, Figma and many other useful tools for general UX design.</p>
+        <p>Here's another very interesting paragraph about me.</p>
+        <p>And one more interesting paragraph.</p>
+      </div>
+
+    </section>
+  </main>
 
 <footer>
-  <a>About Me</a>
-  <a>Experience</a>
-  <h1> Alex Hiser </h1>
-  <a>Portfolio</a>
-  <a>Contact Me</a>
+  <div class="copy">
+    &copy; Alex Hiser
+  </div>
+  <div class="socialMedia">
+    <i class="fab fa-etsy"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-facebook"></i>
+  </div>
+  <div class="contact">
+    <a href="mailto:alex.hiser@yahoo.com">Contact Me</a>
+  </div>
+</footer>
+
+</body>
+</html>

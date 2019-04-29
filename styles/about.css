@@ -1,25 +1,117 @@
-.aboutImage {
+* {
+  font-size: 18px;
+}
+/* Header Styles */
+header {
+  display:flex;
+  background:black;
+  height:170px;
+}
+
+.logoImage {
+  width: 150px;
+  height:150px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.logoImage img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position:relative;
+  flex:1;
+}
+
+.navButton {
+  text-align:right;
+  color: white;
+}
+
+nav ul.menu {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:none;
+  position:absolute;
+  right:0px;
+  text-align:right;
+}
+
+nav ul.menu li {
+  color: white;
+}
+
+nav:hover ul {
+  display:block;
+}
+/* End of Header Styles */
+
+/* Main Content Styles */
+main {
+  min-height:200px;
+  /* border: 1px solid black; */
+}
+
+.profileImage {
   width: 200px;
-  height: 200px;
-  /* margin-left; auto;
-  margin-right; auto;
-  margin-top: 10px;
-  */
+  height:200px;
   margin: 10px auto;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.aboutImage img {
-  width; 100%
-}
-
-h1 {
+.profileImage img {
   text-align: center;
-  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+}
+/* End of Main Content Styles */
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  /* background-image: url('../images/DSC_0025.jpg'); */
 }
 
-h2 {
-  text-align:center;
-  font-size: 1rem;
+.socialMedia i {
+  padding: 0 .5rem;
 }
+/* End of Footer Styles */
+
+/* I had already finished the media query before turning this in, as I was having technical difficulties with a few of the previous videos */
+@media screen and (min-width: 800px) {
+  section {
+    display:flex;
+  }
+
+   .profileImage {
+     text-align:center;
+   }
+
+   .aboutMe {
+     flex:1;
+   }
+
+  footer {
+    display: flex;
+    /* If you want to change the footer color, the code is this...
+    background-color: red;
+    */
+  }
+
+  .title, .copy, .socialMedia, .contact, .nav, .logo {
+    flex: 1;
+  }
+
+
+.copy {
+  text-align:left;
+}
+
+.contact {
+  text-align:right;
+}
+  }
