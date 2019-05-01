@@ -3,6 +3,7 @@
   font-family: sans-serif;
   background-color: #181918;
   color: white;
+  text-align: center;
 }
 /* Header Styles */
 header {
@@ -16,10 +17,17 @@ header {
    border-radius: 50%;
  }
 
- .logoImage img {
-   width: 100%;
-   height: 100%;
- }
+ .logoImage {
+    width:50px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 50%;
+  }
+
+  .logoImage img {
+    width: 100%;
+    height: 100%;
+  }
 
 nav {
   flex:1;
@@ -65,18 +73,43 @@ main {
   /* border: 1px solid black; */
 }
 
-.profileImage {
-  width: 200px;
-  height:200px;
-  margin: 10px auto;
-  border-radius: 50%;
-  overflow: hidden;
+.largebox {
+  width: 800px;
+  height: 350px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.profileImage img {
-  text-align: center;
-  width: 100%;
+.box1 {
+  height: 300px;
+  width: 250px;
+  float: left;
+}
+.box1 img {
   height: 100%;
+  width: 100%;
+}
+
+.box2 {
+  height: 300px;
+  width: 250px;
+  float: left;
+  margin-left: 25px;
+}
+.box2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.box3 {
+  height: 300px;
+  width: 250px;
+  float: right;
+}
+.box3 img {
+  height: 100%;
+  width: 100%;
 }
 /* End of Main Content Styles */
 
@@ -93,6 +126,10 @@ footer {
 
 /* I had already finished the media query before turning this in, as I was having technical difficulties with a few of the previous videos */
 @media screen and (min-width: 800px) {
+* {
+  text-align: center;
+}
+
   section {
     display:flex;
   }
